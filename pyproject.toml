@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "geog"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+package-mode = false
+packages = [
+    { include = "myria3d" },
+    { include = "scripts" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+streamlit = "^1.44.1"
+beautifulsoup4 = "^4.13.4"
+requests = "^2.32.3"
+requests-cache = "^1.2.1"
+unidecode = "^1.4.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
